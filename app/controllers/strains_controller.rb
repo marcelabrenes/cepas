@@ -23,6 +23,7 @@ class StrainsController < ApplicationController
   def create
     @strain = Strain.new(strain_params)
 
+
     respond_to do |format|
       if @strain.save
         format.html { redirect_to @strain, notice: "Strain was successfully created." }
